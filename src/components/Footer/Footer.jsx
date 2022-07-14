@@ -67,7 +67,7 @@ const Footer = () => {
 
     <div className="footer-icons">
 
-      <a href="#"><i className="fa fa-facebook"><AiFillFacebook/></i></a>
+      <a href="https://www.facebook.com/ThunderBolt-Nigeria-Ltd-106946961977247/"><i className="fa fa-facebook"><AiFillFacebook/></i></a>
       <a href="#"><i className="fa fa-twitter"><AiFillInstagram/></i></a>
 
     </div>

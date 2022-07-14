@@ -35,14 +35,16 @@ border-radius: 10px;
 .heading{
 font-size: 18px;
 padding:0.5rem;
+font-family: 'Tangerine', cursive;
 }
 
+
 .grid-item:hover  .image{
-    transform:scaleY(1.05); 
-   transform-origin: top center !important;
+    /* transform:scaleY(1.05); 
+   transform-origin: top center !important; */
 }
 .grid-item:hover .desc{
-display:none;
+/* display:none; */
 }
 .hero img{
     transition: transform 100ms ease-in-out;
@@ -75,15 +77,15 @@ display:none;
     }
 
   .grid-item:hover  .image{
-         transform:scaleY(1.025); 
-        transform-origin: top center !important;
+         /* transform:scaleY(1.025); 
+        transform-origin: top center !important; */
    }
    .grid-item p{
     font-size:15px;
     padding-top:.5rem;
    }
    .grid-item:hover .desc{
-    display:none;
+    /* display:none; */
    }
 
 .hero{

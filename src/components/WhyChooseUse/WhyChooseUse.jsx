@@ -22,19 +22,19 @@ const WhyChooseUse = () => {
              </div>
              
              <div className="card-one">
-                <img src={employee} alt="employee" className="employee"/>
-                <h3>Expert Employees</h3>
-                <p>TBW Board of Directors and Management are carefully and consciously selected team of highly competent intellectuals with experience in diverse security operation and general management with requisite experience and track record of service .</p>
-             </div>
-             <div className="card-one">
                 <img src={locked} alt="locked" className="locked"/>
                 <h3>Verified Service</h3>
-                <p>Within the span of 8 years TBW has been able to seamlessly cut into virtually, all sector of economy, today we operate in the Oil and & Gas (downstream), Tertiary institutions, reputable government hospital and facilities, church and private premises.</p>
+                <p>Over the years TBW has been able to seamlessly cut into virtually, all sector of economy Successfully.</p>
+             </div>
+             <div className="card-one">
+                <img src={employee} alt="employee" className="employee"/>
+                <h3>Expert Employees</h3>
+                <p>TBW  Directors and Management are meticulously selected team of highly competent intellectuals with experience.</p>
              </div>
              <div className="card-one">
                 <img src={lock} alt="lock" className="lock"/>
                 <h3>Secured Service</h3>
-                <p>Our  guard are highly motivated, well trained & experienced  men and women, solving existing threat  client properties, existing threat and safety.</p>
+                <p>Our  guard are highly motivated, well trained & experienced  individuals, solving existing threat  and protecting client properties.</p>
              </div>
              </span>
        </div>
