@@ -1,0 +1,87 @@
+.location{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    flex-direction: column;
+}
+
+.phrase{
+    font-size: 22px;
+    padding:0.3rem;
+}
+
+.location-grid{
+ display:grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+ grid-template-rows: repeat(2, minmax(100px, auto));
+ gap:0.4rem;
+ padding:0 .4rem;
+}
+.location-grid span{
+ display:flex;
+ align-items: center;
+ justify-content:center;
+ padding:.5rem;
+}
+.location-grid span{
+    border: 1px solid black;
+}
+
+.location-grid span h4{
+    width:100%;
+    position: relative;
+    top:10%;
+}
+.location-grid span p{
+    position: relative;
+    bottom:10%;
+    font-size: 17px;
+}
+
+.location-grid span{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align:start;
+}
+
+.location-grid span:nth-child(3){
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align:start;
+}
+.location-grid span:nth-child(3) span:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    text-align:start;
+    border: none !important;
+    width:30%;
+    position: relative;
+    top:10%;
+    
+}
+.location-grid span:nth-child(3) span:nth-child(2){
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: none !important;
+    width:70%;    
+}
+
+
+@media screen and (min-width: 768px){
+    .location-grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+        grid-template-rows: repeat(2, minmax(100px, auto));
+        gap:0.4rem;
+       }
+}

@@ -1,0 +1,292 @@
+.slider {
+  width: 100vw;
+  min-height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+.content h2{
+  font-size:15px;
+}
+.content p{
+  font-size:10px;
+}
+
+
+/* small screen*/
+@media screen and (max-width: 767px) {
+  .content{
+    position: absolute;
+    top: 50% !important;
+    left: 25%;
+    transform: translate(-15%, -15%) !important;
+    background: rgba(0, 0, 0, 0.3);
+    animation: slide-up .2s ease 0.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    }
+
+}
+
+
+@media screen and (max-width:375px){
+  .slider {
+    width: 100vw;
+    min-height: 240px !important;
+    max-height: 100vh;
+  }
+}
+
+@media screen and (max-width:280px){
+  .slider {
+    width: 100vw;
+    min-height: 186px !important;
+    max-height: 100vh;
+  }
+  .content h2{
+    font-size:15px !important;
+  }
+  .content p{
+    font-size:9px !important;
+  }
+
+  .content{
+    padding: 0rem !important;
+  }
+}
+
+
+.content h2{
+color: #FDCF8F;
+}
+
+.slideXX {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all .1s ease;
+}
+
+.image{
+  width: 100%;
+  height: 100% !important;
+  object-fit: contain;
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+.content > * {
+color: white;
+}
+
+.current .content {
+opacity: 1;
+transform: translateX(0);
+transition: all 1s ease;
+}
+
+.arrow {
+border: 2px solid black;
+background-color: transparent;
+color: black;
+cursor: pointer;
+height: 1rem;
+width: 1rem;
+border-radius: 50%;
+position: absolute;
+z-index: 999;
+}
+.arrow:hover {
+color: #FCC06E;
+}
+
+.next {
+top: 50%;
+right: .5rem;
+}
+.prev {
+top: 50%;
+left: .5rem;
+}
+@keyframes slide-up {
+0% {
+  visibility: visible ;
+  top: 10%;
+}
+100% {
+  visibility: visible ;
+  top: 20%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:540px) {
+  .slider {
+    width: 100vw;
+    min-height: 325px !important;
+    max-height: 100vh;
+  }
+}
+
+
+/* large screen */
+@media screen and (min-width: 768px) {
+  .slider {
+    width: 100vw;
+    padding-top:55% !important;
+  }
+  .slide {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100%  !important;
+  }
+
+  .arrow{
+    width:1.5rem;
+    height: 1.5rem;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .content{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-20%, -20%) !important;
+    background: rgba(0, 0, 0, 0.3);
+    animation: slide-up .2s ease 0.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    }
+
+    .content h2{
+      font-size:25px;
+    }
+    .content p{
+      font-size:20px;
+    }
+}
+
+.next {
+  top: 60%;
+  }
+  .prev {
+  top: 60%;
+  }
+
+
+.slide img {
+  height: 100%;
+}
+
+.current {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .slide {
+    position: absolute;
+    top: 45px !important;
+    left: 10px !important;
+    padding-left: 0.5rem;
+    width: 60% !important;
+    height: 60% !important;
+    padding: 1rem 0 ;
+  }
+  @keyframes slide-up {
+    0% {
+      visibility: visible ;
+      top: 10px !important;
+    }
+    100% {
+      visibility: visible ;
+      top: 45px !important;
+      opacity: 1;
+    }
+    }
+
+  
+    
+
+  .content {
+    position: absolute !important;
+    top: 30% !important;
+    right: -63% !important;
+    opacity: 0;
+    font-size: 15px;
+    color: #fff;
+    padding: 2rem;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    animation: slide-up .5s ease 0.5s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    }
+
+    .next {
+      bottom: 0 !important;
+      }
+      .prev {
+      bottom: 30% !important;
+      }
+}
+
+@media screen and (min-width: 1280px) {
+  .slide {
+    position: absolute;
+    top: 10px !important;
+    left: 10px;
+    padding-left: 0.5rem;
+    width: 58% !important;
+    height: 58% !important;
+  }
+  .content {
+    position: absolute;
+    top: 30%;
+    right: -68% !important;
+    opacity: 0;
+    color: #fff;
+    padding: 3rem;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.3)
+    }
+}
+
+
+
+
+
+
+ 

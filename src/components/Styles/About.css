@@ -1,0 +1,160 @@
+/***
+====================================================================
+			Page Title
+====================================================================
+
+***/
+
+.page-title{
+	position:relative;
+	padding:250px 0px 110px;
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	text-align:center;
+	margin-top: 50px;
+}
+
+.page-title:before{
+	content:'';
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-color:rgba(34,34,34,0.65);
+}
+
+.page-title .inner-container{
+	position: relative;
+}
+
+.page-title h1{
+	position:relative;
+	float: left;
+	font-size:25px;
+	color:#ffffff;
+	font-weight: 500;
+	padding-left:  25px;
+	margin-left: 25px;
+}
+
+.page-title .bread-crumb {
+	position: relative;
+	float: right;
+}
+
+.page-title .bread-crumb li{
+    list-style: none;
+	position: relative;
+	float: left;
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: 400;
+	cursor: default;
+	padding-right:  25px;
+	margin-right: 25px;
+	font-family: 'Tangerine', cursive;
+}
+
+.page-title .bread-crumb li:before{
+	position: absolute;
+	right: -1px;
+	top: 10px;
+	height: 30px;
+	width: 2px;
+	background-color: #c5a479;
+	content: "";
+}
+
+
+.page-title .bread-crumb li:last-child:before{
+	display: none;
+}
+
+.page-title .bread-crumb li a{
+	color:#c5a479;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.page-title .bread-crumb li a:hover{
+	color:#ffffff;	
+}
+
+@media screen and (max-width: 280px){
+    .page-title h1{
+        font-size:20px;
+    }
+    .page-title .bread-crumb li{
+        font-size:25px;
+    }
+    .page-title h1{
+        font-size:20px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .page-title h1{
+        position:relative;
+        float: left;
+        font-size:25px;
+        color:#ffffff;
+        font-weight: 500;
+        padding-left:  30px;
+        margin-left: 30px;
+    }
+    .page-title .bread-crumb li{
+        list-style: none;
+        position: relative;
+        float: left;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 400;
+        cursor: default;
+        padding-right:  30px;
+        margin-right: 30px;
+        font-family: 'Tangerine', cursive;
+    }
+
+}
+
+.FF{
+    padding:1rem;
+}
+.about{
+    background: rgba( 29, 29, 29, 0.15 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    padding-top: 30px;
+    margin-bottom:0.2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-Conn img{
+    width:100%;
+}
+
+.statement{
+    display:grid;
+    align-items: center;
+    gap:0.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-auto-flow: dense;
+}
+
+.about > h4{
+    width:80%;
+}
+
+.statement span{
+    padding:0.5rem;
+    text-align:start;
+}
+

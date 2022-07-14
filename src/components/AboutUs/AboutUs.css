@@ -1,0 +1,42 @@
+.aboutUs{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    text-align: start;
+    padding-top:20px;
+    width:100%;
+}
+
+.com{
+    width:80%;
+}
+
+
+
+
+.aboutUs span:nth-child(2){
+    padding:.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .aboutUs{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction:row;
+        width: 100%;
+    }
+    .aboutUs span{
+        width:50%;
+        padding:1rem;
+    }
+    .aboutUs span:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
