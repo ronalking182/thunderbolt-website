@@ -6,6 +6,31 @@ import { NavLink } from 'react-router-dom'
 import OpenMenu from "../../assert/openMenu";
 import CloseMenu from "../../assert/closeMenu";
 // import useDimension from "../../hooks/useDimension";
+import { motion } from 'framer-motion';
+
+
+
+
+const containerVariants = {
+	hidden: { 
+	  opacity: 0, 
+	  x: '100vw',
+	  transition: {
+		staggerChildren: 0.5,
+	  } 
+	},
+	visible: { 
+	  opacity: 1, 
+	  x: 0,
+	  transition: { 
+		type: 'spring',
+		mass: 0.4,
+		damping: 8,
+		staggerChildren: 0.4,
+		when: "beforeChildren",
+	  }
+	},
+  };
 
 
 
@@ -53,7 +78,13 @@ const Nav = () => {
                 <img src={logo} alt="logo" className="Log" />
             </NavLink>
             </span>
-      <span className={` ${openMenuBar ? "menu-item" :"list-item"} `}>
+      <motion.span 
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+       className={` ${openMenuBar ? "menu-item" :"list-item"} `}
+       >
    {openMenuBar ?
     <span onClick={HandleCloseNav}  className={openMenuBar ? "menu" : "menu-X"}><CloseMenu /></span> : 
     <span onClick={HandleCloseNav}  className={openMenuBar ? "menu" : "menu-X"}><OpenMenu/></span>
@@ -111,7 +142,7 @@ const Nav = () => {
             </NavLink>
               </li>
           </ul>
-      </span>
+      </motion.span>
   </div>;
 };
 

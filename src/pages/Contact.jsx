@@ -30,14 +30,18 @@ const containerVariants = {
   };
 
 const Contact = () => {
+
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  
   return <motion.div
   variants={containerVariants}
   initial="hidden"
   animate="visible"
   exit="exit"
+  className='ConT'
   >   
          <div className="contact-CC">
          <div className="picture">
